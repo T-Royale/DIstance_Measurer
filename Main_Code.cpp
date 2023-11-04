@@ -1,14 +1,14 @@
 #include <LiquidCrystal.h>
 
-#define RS 29
-#define ENABLE 30
-#define D4 31
-#define D5 32
-#define D6 33
-#define D7 34
+#define RS 4
+#define ENABLE 5
+#define D4 6
+#define D5 7
+#define D6 8
+#define D7 9
 
-#define trigger 41
-#define echo 40
+#define trigger 3
+#define echo 2
 #define ConValue 58.2
 
 LiquidCrystal lcd (RS, ENABLE, D4, D5, D6, D7);
