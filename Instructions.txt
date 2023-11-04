@@ -1,0 +1,21 @@
+This project is more dificult than the previous one so I hope i can explain myself correctly. 😁
+
+For this project I used an Arduino UNO, a 16x2 lcd display, a HC-SR04 sensor, two 100Ω potenciometers and a breadboard.
+If your components are diferent you may have to pay attention to the following things.
+
+  -First of all if you're using an arduino uno, it should be easy to folow the connections.png file, but if you are using another board, make sure you connect all inputs to digital pins 
+  and change the "#define" numbers in the code acording to the number of each pin. If it's done correctly it swould work fine.
+
+  -Also, if your sensor isn't the HC-SR04 you may have to change the ConVal variable in the code and put the conversion value that the manufacturer of your sensor may specify,
+  most times it's 29 or 58.2 (like in the code).
+
+  -There aren't so many types of displays, the only thing you should make sure of is that it's compatible with the LiquidCrystal library for arduino and it's 16x2,
+  if not, you must modify the instruction "lcd.begin (16,2);" in void.Setup().
+
+  -If you're curious you maybe want to know why pins D0 to D3 in the lcd are not used, and well, that's because the LiquidCrystal library simply doesn't need them.
+
+  -The potenciometers are used to controll the contrast and brightness of the lcd, you can use 50Ω and 75Ω resistors instead of it but I like potenciometers better.
+
+Last but not least make sure to contact me via discord if I can help you with anything. 🤝
+
+Thank you for watching this!
